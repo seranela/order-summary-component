@@ -32,7 +32,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 1.5rem;
+  margin: 0;
+  padding: 1.5rem;
 }
 
 a {
