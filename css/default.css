@@ -1,0 +1,155 @@
+:root {
+  --color-primary-pale-blue: hsl(225, 100%, 94%);
+  --color-primary-bright-blue: hsl(245, 75%, 52%);
+  --color-primary-bright-blue-hover: hsl(245, 81%, 68%);
+  --color-neutral-extra-pale-blue: hsl(225, 100%, 98%);
+  --color-neutral-mute-blue: hsl(224, 23%, 55%);
+  /* Alternate color variation to meet WCAG-AA contrast ratio */
+  --color-neutral-mute-blue-alt: hsl(222, 23%, 48%);
+  --color-neutral-dark-blue: hsl(223, 47%, 23%);
+  --font-body: 'Red Hat Display', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: var(--font-body);
+  font-weight: 500;
+  background-color: hsl(226, 95%, 92%); /* Placeholder color */
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1.5rem;
+}
+
+a {
+  color: var(--color-primary-bright-blue);
+  font-weight: 700;
+}
+
+a:hover {
+  color: var(--color-primary-bright-blue-hover);
+}
+
+button {
+  border: none;
+  padding: 1.3em;
+  border-radius: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--color-neutral-mute-blue-alt);
+}
+
+button:hover {
+  color: var(--color-neutral-dark-blue);
+}
+
+button[type=submit] {
+  background-color: var(--color-primary-bright-blue);
+  color: white;
+  box-shadow: 0px 18px 20px hsla(245, 75%, 52%, 0.25);
+}
+
+button[type=submit]:hover {
+  background-color: var(--color-primary-bright-blue-hover);
+}
+
+.card {
+  background-color: white;
+  color: var(--color-neutral-mute-blue-alt);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 30rem;
+  box-shadow: 0px 20px 40px hsla(245, 55%, 52%, 0.2);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+}
+
+.card h1 {
+  text-align: center;
+  margin: 0;
+  color: var(--color-neutral-dark-blue);
+  font-size: 1.4em;
+  font-weight: 900;
+}
+
+.card-body > p {
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.plan-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--color-neutral-extra-pale-blue);
+  padding: 0.9rem;
+  border-radius: 10px;
+  margin: 0.5rem 0;
+}
+
+.plan-container a {
+  font-size: 0.8em;
+}
+
+.plan-details {
+  flex-grow: 1;
+  font-size: 0.95em;
+}
+
+.plan-details p {
+  line-height: 1.5;
+  margin: 0;
+}
+
+.plan-type {
+  font-weight: 900;
+  color: var(--color-neutral-dark-blue);
+}
+
+@media (min-width: 576px) {
+  .card-body {
+    gap: 1rem;
+    padding: 3rem 3rem 2rem 3rem;
+  }
+  .card h1 {
+    font-size: 1.9em;
+  }
+  .card-body > p {
+    font-size: 1.1em;
+  }
+  .plan-details {
+    font-size: 1.05em;
+  }
+  .plan-container {
+    gap: 1.2rem;
+    padding: 1.4rem;
+  }
+  .plan-container a {
+    font-size: 0.9em;
+  }
+}
