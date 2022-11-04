@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/order-summary-component-rAwCeLJ7I6](https://www.frontendmentor.io/solutions/order-summary-component-rAwCeLJ7I6)
 - Live Site URL: [https://seranela.github.io/order-summary-component/](https://seranela.github.io/order-summary-component/)
 
 ## My process
